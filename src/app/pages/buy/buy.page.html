@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>buy</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-text>{{variable}}</ion-text>
+<ion-item>
+<ion-label position="floating" >Hi</ion-label>
+  <ion-input color="success" type="text"  placeholder="Hello" [(ngModel)]="variable"></ion-input>
+</ion-item>
+<ion-item>
+  <ion-button (click)="onclick()">Save</ion-button>
+</ion-item>
+<ion-list>
+  <ion-item *ngFor="let i of list">
+    <ion-label>
+      {{i}}
+    </ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>
